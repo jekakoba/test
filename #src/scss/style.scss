@@ -1,0 +1,100 @@
+// Обнуление
+@import "null";
+
+// Шрифты
+@import "fonts";
+
+// Иконочный шрифт
+
+// Переменные
+$minWidth: 320px;
+$maxWidth: 1920;
+$maxWidthContainer: 1170;
+$md1: $maxWidthContainer + 12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+
+// ==================================================
+html,
+body {
+	font-family: Heboo;
+	line-height: 1;
+	font-size: 16px;
+	font-weight: 500;
+	color: #21243d;
+	background: #ffffff;
+	height: 100%;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.page {
+	padding: 90px 0px 0px 0px;
+	flex: 1 1 auto;
+}
+.container {
+	max-width: 876px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.ibg {
+	position: relative;
+}
+.ibg img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}
+
+@import "ui";
+@import "header";
+@import "home";
+@import "works";
+@import "footer";
+
+/* ============================================================= */
+.social {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&__item {
+		color: #21243d;
+		font-size: 30px;
+		transition: color 0.3s ease 0s;
+		&:not(:last-child) {
+			margin: 0px 35px 0px 0px;
+		}
+	}
+	& .icon-facebook {
+		&:hover {
+			color: blue;
+		}
+	}
+	& .icon-instagram {
+		&:hover {
+			color: rgb(247, 39, 67);
+		}
+	}
+	& .icon-twitter {
+		&:hover {
+			color: blue;
+		}
+	}
+	& .icon-Linkedin {
+		&:hover {
+			color: blue;
+		}
+	}
+}

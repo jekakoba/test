@@ -1,0 +1,43 @@
+.header {
+	&__content {
+		max-width: 1051px;
+		margin: 0 auto;
+		padding: 0px 10px;
+	}
+
+	&__menu {
+	}
+}
+.menu {
+	&__icon {
+	}
+
+	&__body {
+	}
+
+	&__list {
+		min-height: 82px;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		transition: color 0.8s ease 0s;
+	}
+
+	&__item {
+		&:not(:last-child) {
+			margin: 0px 25px 0px 0px;
+		}
+	}
+
+	&__link {
+		font-size: 20px;
+		font-weight: 500;
+		color: black;
+		transition: color 0.3s ease 0s;
+		&:hover {
+			color: red;
+		}
+	}
+}
+.icon-menu {
+}

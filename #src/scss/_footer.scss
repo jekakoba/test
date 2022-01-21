@@ -1,0 +1,18 @@
+.footer {
+	padding: 50px 0px;
+	margin-top: 83px;
+	&__container {
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+
+	&__social {
+		margin-bottom: 26px;
+	}
+
+	&__copy {
+		font-size: 14px;
+		line-height: 21 / 14 * 100%;
+	}
+}
